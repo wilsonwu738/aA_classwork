@@ -32,3 +32,22 @@ let foo1 = function(){
 let foo2 = () =>{
     return "bar"
 }
+
+function average(num1,num2){
+    let sum = num1+num2;
+    let avg=sum/2;
+    return avg;
+}
+
+function average2(num1,num2){
+    let sum = sumNum(num1,num2)
+    let avg = sum/2
+    return avg
+}
+
+function sumNum(num1, num2){
+    return num1+num2
+}
+
+console.log(average(1,2))
+console.log(average2(2,5))
