@@ -116,3 +116,43 @@ function isSubstring(searchString, subString) {
 console.log(isSubstring('hello','el'))
 
 //problem 8 
+function echo(string) {
+    return '"' + string.toUpperCase() + "..." + string + "..." + string.toLowerCase() + '"'
+}
+console.log(echo("wilson"))
+
+//problem 9 
+function isEven(num) {
+    if (isOdd(num) === false){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(isEven(10))
+console.log(isEven(9))
+
+//problem 10
+function averageOfFour(num1,num2,num3,num4){
+    return (num1 + num2 + num3 + num4) /4 
+}
+
+console.log(averageOfFour(1,2,3,4))
+
+//typing
+function sayHello(name){
+    let msg = 'Hello, ' + name + '. How are you?';
+    return msg
+}
+console.log(sayHello('bootcamp prep'))
+
+function checkNumber(num){
+    if (num > 0){
+        return 'positive';
+    }else if (num < 0){
+        return 'negative';
+    }else{
+        return 'zero'
+    }
+}
+console.log(checkNumber(10))
