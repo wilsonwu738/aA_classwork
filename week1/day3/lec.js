@@ -19,6 +19,15 @@
 // console.log(9)
 // console.log(10)
 
-for (let i = 1; i <= 10; i++){
+for (let i = 1; i <= 10; i++){ // in for loop (initializer, condition, incrementer)
     console.log(i)
 }
+
+console.log("after the loop")
+
+function printRange(start, end){
+    for (let i = start; i <= end; i++){
+        console.log(i)
+    }
+}
+printRange(3,10)
