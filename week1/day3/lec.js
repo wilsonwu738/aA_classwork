@@ -19,15 +19,35 @@
 // console.log(9)
 // console.log(10)
 
-for (let i = 1; i <= 10; i++){ // in for loop (initializer, condition, incrementer)
-    console.log(i)
-}
+// for (let i = 1; i <= 10; i++){ // in for loop (initializer, condition, incrementer)
+//     console.log(i)
+// }
 
-console.log("after the loop")
+// console.log("after the loop")
 
-function printRange(start, end){
-    for (let i = start; i <= end; i++){
-        console.log(i)
+// function printRange(start, end){
+//     for (let i = start; i <= end; i++){
+//         console.log(i)
+//     }
+// }
+// printRange(3,10)
+
+
+// function printRange(start, end){
+//     for (let i = start; i <= end; i++){
+//         console.log(i)
+//         return i     //return will end the loop
+//     }
+// }
+
+// let myVar = printRange(1,4)
+// console.log(myVar)
+
+function printRange1(start, end){
+    let i = start;
+    while (i <= end){
+        console.log(i);
+        i++
     }
 }
-printRange(3,10)
+printRange1(10,25)
