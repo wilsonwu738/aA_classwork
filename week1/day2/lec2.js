@@ -82,13 +82,13 @@ console.log(plusFive(10))
 
 //problem3
 function threeOrSeven(num){
-    if (num % 3 === 0 || num % 7 === 0){
+    if ((num % 3 === 0 || num % 7 === 0) && num % 21 === 0){
         return true
     } else{
         return false
     }
 }
-console.log(threeOrSeven(10))
+console.log("3 or 7",threeOrSeven(3))
 
 //Problem 4
 function hello(str){

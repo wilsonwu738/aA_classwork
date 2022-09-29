@@ -52,30 +52,54 @@ function printRange1(start, end){
 }
 //printRange1(10,25)
 
-let i = 20;
-while (false){
-    console.log(i);
-}
+// let i = 20;
+// while (false){
+//     console.log(i);
+// }
 
 
-function skipFive(num){
-    for (let i = 1; i <= num; i++){
-        if (i === 5){
-            continue
+// function skipFive(num){
+//     for (let i = 1; i <= num; i++){
+//         if (i === 5){
+//             continue
+//         }
+//         console.log(i)
+//     }
+// }
+
+// skipFive(6)
+
+// function breakAtFive (num) {
+//     for (let i = 1; i <= num; i++){
+//         if (i === 5){
+//             break
+//         }
+//         console.log(i)
+//     }
+//     console.log("after the loop")
+// }
+// breakAtFive(20)
+
+// function isPrime(num){
+//     for (i = 1; i <= num; i++){
+//         counter = 0
+//     }
+
+    
+//     isDivisible = 
+//     return num >= 2 
+// }
+
+function isPrime(num){
+    if (num < 2) return false;
+    for (let n = 2; n < num; n++){
+        if (num % n === 0){
+            return false;
         }
-        console.log(i)
     }
+    return true;
+
 }
 
-skipFive(6)
-
-function breakAtFive (num) {
-    for (let i = 1; i <= num; i++){
-        if (i === 5){
-            break
-        }
-        console.log(i)
-    }
-    console.log("after the loop")
-}
-breakAtFive(20)
+console.log(isPrime(10))
+console.log(isPrime(5))
