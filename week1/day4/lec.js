@@ -31,5 +31,20 @@ console.log(fruits)
 //more array methods, NON mutable
 console.log("immutables now")
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(fruits.concat(numbers));
-console.log(fruits)
+//console.log(fruits.concat(numbers));
+//console.log(fruits)
+console.log(numbers.slice()); //returns the copy when giving no argument
+console.log(numbers.slice(1));  // starts from index you choose and everything else
+console.log(numbers.slice(0,2));  //(inclusive, exclusive)
+console.log("split and join now")
+
+let string = "hi my name is Wilson"
+console.log(string.split('!!'));  // turns string into array, it needs to be a space
+console.log(string);
+
+console.log(numbers.join("___"));
+
+for (let i = 0; i < numbers.length; i++) {
+    let ele = numbers[i]
+    console.log(ele)
+}
