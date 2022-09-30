@@ -39,7 +39,7 @@ console.log(numbers.slice(0,2));  //(inclusive, exclusive)
 console.log("split and join now")
 
 let string = "hi my name is Wilson"
-console.log(string.split('!!'));  // turns string into array, it needs to be a space
+console.log(string.split(' '));  // turns string into array, it needs to be a space, you can only split what you have in the s
 console.log(string);
 
 console.log(numbers.join("___"));
@@ -47,4 +47,9 @@ console.log(numbers.join("___"));
 for (let i = 0; i < numbers.length; i++) {
     let ele = numbers[i]
     console.log(ele)
+}
+
+for (let i = numbers.length - 1; i >= 0; i--) {
+    let ele = numbers[i]
+    console.log(ele);
 }
