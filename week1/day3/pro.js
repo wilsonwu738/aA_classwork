@@ -43,4 +43,5 @@ function sumNums(max) {
 function isFactorOf(num, factor) {
     return num % factor === 0
 } 
-console.log(isFactorOf(10,3))
+//console.log(isFactorOf(10,3))
+
