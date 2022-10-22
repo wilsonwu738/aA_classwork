@@ -72,3 +72,5 @@ function power(base, exp) {
     }
     return base * power(base, exp - 1);
 }
+
+console.log(7640/60)
